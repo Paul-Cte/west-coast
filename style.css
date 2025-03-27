@@ -104,6 +104,7 @@ a{
     --green:#2c874f;
     --yellow:#d7d56a;
     --white:#EEEEEE;
+    --vert_clair:#d5f2d5;
 }
 
 /* page accueil */
@@ -228,7 +229,7 @@ i,.licontents{
 }
 
 .section_presentation>div{
-    background-color: #d5f2d5;
+    background-color: var(--vert_clair);
     box-shadow: 0px 0px 5px var(--green);
     margin-top: 5vh;
     margin-bottom: 5vh; 
