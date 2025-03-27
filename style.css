@@ -117,6 +117,7 @@ header{
     position: sticky;
     top: 0%;
     z-index: 10;
+    transition: transform 0.3s ease-in-out;
 }
 
 
@@ -276,4 +277,29 @@ i,.licontents{
 .section_presentation li:hover{
     transform: scale(1.03);
     transition: all 0.2s ease-out;
+}
+
+
+/* footer */
+
+footer{
+    height: fit-content;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--green);
+}
+
+footer a{
+        color: var(--white);
+
+}
+
+footer>div{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+footer>div:last-child{
+    border-left: 1px solid black;
 }
