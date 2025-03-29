@@ -107,68 +107,88 @@ a{
     --vert_clair:#d5f2d5;
 }
 
-/* page accueil */
+/* header */
 
 header{
     height: 90px;
     background-color: var(--green);
-    padding-right: 10vw;
-    padding-left: 10vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
     position: sticky;
     top: 0%;
     z-index: 10;
     transition: transform 0.3s ease-in-out;
 }
 
-
-header a{
-    color: var(--white);
+header>section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
- header nav{
-    gap: 50px;
+
+#btn_fermeture{
+    display: none;
 }
-header div{
+  
+.contact_img{
+    display: none;
+}
+
+.contact_txt{
+    display: block;
+}
+
+.div_btn_burger{
+    display: none;
+}
+  
+header>section>div,.li_logo{
+    width: 30vw;
+}
+
+.contact_panier{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     gap: 20px;
 }
-header div img{
-    height: 60px;
+
+nav>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
 }
 
-.hover:hover {
-    text-decoration: underline!important;
-    text-decoration-color: var(--white)!important;
-    text-decoration-thickness: 1.5px!important; /* Épaisseur du soulignement */
-    color: var(--white);
+.contact_img img{
+    height: 30px;
+}
+
+.logo{
+    width: 50px;
 }
 
 header .fi{
-    font-size: 20px;
+    font-size: 25px;
+    color: var(--white);
 }
 
-.contact{
-    background-color: var(--white);
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.contact a:hover{
-    color: var(--green)!important;
-}
-
-.contact:hover{
-    transform: scale(1.03);
-    transition: all 0.2s ease-out;
-
-}
-
-.contact a{
-    color: var(--green);
-}
 
 i,.licontents{
     display: contents;
+} 
+
+
+header a{
+    color: var(--white);
+    /* font-size: 25px; */
 }
+
+
+/* image accueil */
 
 
 .image_accueil{
@@ -221,6 +241,8 @@ i,.licontents{
 .text_accueil a{
     color: var(--white);
 }
+
+
 
 /* la presentation générale de l'accueil du site */
 
@@ -306,16 +328,169 @@ footer>div:last-child{
     border-left: 1px solid black;
 }
 
+
 /* media queries */
 @media (max-width: 1000px) {
+
+    /* header */
+
+    .li_logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
     
+    #btn_fermeture{
+        display: block;
+    }
+    
+    .contact_img{
+        display: block;
+    }
+
+
+    header{
+        height: 90px;
+        background-color: var(--green);
+        padding-right: 5vw;
+        padding-left: 5vw;
+        position: sticky;
+        top: 0%;
+        z-index: 10;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    header>section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    header>section>div{
+        width: 30vw;
+    }
+
+    .contact_panier{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    .contact_txt{
+        display: none;
+    }
+
+    .contact_img img{
+        height: 30px;
+    }
+
+    .logo{
+        height: 60px;
+        width: auto;
+    }
+
+    header .fi{
+        font-size: 25px;
+        color: var(--white);
+    }
+
+
+    i,.licontents{
+        display: contents;
+    }
+
+
+    .btn_burger{
+        background-color: var(--green);
+        display: flex;
+        justify-content: center;
+        border: 0px solid black;
+
+    }
+
+    .img_hamburger{
+        height: 35px;
+        z-index: 13;
+    }
+
+
+    .menu_deroulant{
+        z-index: 15;
+        position:absolute;
+        background-color: var(--green);
+        top: 0px;
+        left: 0px;
+        transform: translateX(-100%);
+        width: 99vw;
+        height: 100vh;
+        padding: 5vw;
+        padding-top: 32.5px;
+        overflow: hidden;
+    }
+
+    .menu_deroulant a{
+        color: var(--white);
+        font-size: 25px;
+    }
+
+    .menu_deroulant nav ul{
+        position: absolute;
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .menu_deroulant_active{
+        transform: translateX(0%);
+    }
+
+    #btn_fermeture{
+        height: 25px;
+        display: block;
+    }
+
+    .div_btn_burger{
+        display: block;
+    }
+
+    /* autre */
+
     .text_accueil h1{
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+        margin-left: 10vw;
         font-size: 30px;
+        color: var(--white);
+        position: absolute;
+        top: 30%;
+        left: 0%;
+        transform: translateX(0%);
     }
     
     .text_accueil h2{
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+        margin-left: 10vw;
         font-size: 20px;
+        color: var(--white);
+        position: absolute;
+        top: 40%;
+        left: 0%;
+        transform: translateX(0%);
+        font-style: italic;
     }
+
+
+
 
     .section_presentation{
         width: 70vw;
@@ -326,7 +501,7 @@ footer>div:last-child{
         max-width: 60vw;
         margin: auto;
     }
-        
+            
     .section_presentation>div{
         background-color: var(--vert_clair);
         box-shadow: 0px 0px 5px var(--green);
@@ -338,7 +513,6 @@ footer>div:last-child{
         align-items: center;
         border-radius: 15px;
         gap: 0vw;
-
     }
 
     .reverse{
@@ -354,7 +528,7 @@ footer>div:last-child{
 
     .section_presentation>div>div{
         height: 100%;
-        width: 100vw;
+        width: 100%;
         min-height: 300px;
         padding: 60px;
         padding-top: 0px;
@@ -426,7 +600,7 @@ footer>div:last-child{
 
     .section_presentation>div>div{
         height: 100%;
-        width: 100vw;
+        width: 100%;
         min-height: 250px;
         padding: 60px;
         padding-top: 0px;
