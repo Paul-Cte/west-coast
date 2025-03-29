@@ -139,6 +139,13 @@ header>section{
 
 .contact_txt{
     display: block;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.contact_txt a{
+    color: var(--green);
 }
 
 .div_btn_burger{
