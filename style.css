@@ -245,11 +245,26 @@ header a{
     box-shadow: 0px 0px 3px var(--white);
 }
 
-.text_accueil a{
+.text_accueil li:hover{
+  cursor: pointer;
+}
+
+.text_accueil button{
+    background-color: var(--green);
+    border: 0px solid black;
+}
+
+.text_accueil button:hover{
+    cursor: pointer;
+}
+
+.text_accueil button p{
     color: var(--white);
 }
 
-
+.text_accueil button p:hover{
+    cursor:pointer
+}
 
 /* la presentation générale de l'accueil du site */
 
