@@ -22,6 +22,9 @@ a{
 }
 
 
+
+
+
 /* propriété css pour aller plus vite (on les mets dans les class dans le hmtl directement) */
 
 .flex-column{
@@ -139,6 +142,7 @@ header>section{
   
 .contact_img{
     display: none;
+    
 }
 
 .contact_txt{
@@ -175,7 +179,7 @@ nav>ul{
 }
 
 .contact_img img{
-    height: 30px;
+    height: 35px;
 }
 
 .logo{
@@ -197,6 +201,16 @@ header a{
     color: var(--white);
     /* font-size: 25px; */
 }
+
+.cart{
+    height: 35px;
+    width: auto;
+}
+
+.cart .fi{
+    font-size: 35px;
+}
+
 
 
 /* image accueil */
@@ -410,7 +424,7 @@ footer>div:last-child{
     }
 
     .contact_img img{
-        height: 30px;
+        height: 35px;
     }
 
     .logo{
@@ -438,9 +452,10 @@ footer>div:last-child{
     }
 
     .img_hamburger{
-        height: 35px;
+        height: 30px;
         z-index: 13;
     }
+
 
 
     .menu_deroulant{
@@ -487,7 +502,10 @@ footer>div:last-child{
         display: block;
     }
 
+
     /* autre */
+
+
 
     .text_accueil h1{
         display: flex;
