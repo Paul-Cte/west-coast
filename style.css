@@ -200,6 +200,7 @@ i,.licontents{
 header a{
     color: var(--white);
     /* font-size: 25px; */
+    display: inline-block;
 }
 
 .cart{
@@ -425,6 +426,7 @@ footer>div:last-child{
 
     .contact_img img{
         height: 35px;
+        margin-top:4px ;
     }
 
     .logo{
