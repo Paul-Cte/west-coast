@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
     <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <header>
@@ -13,7 +14,7 @@
                 <button class="btn_burger" id="btn_burger"><img class="img_hamburger" src="image/menu-burger.png" alt="menu_hamburger"></button>
             </div>
             
-            <li class="li_logo"><a href="#"><img class="logo" src="image/logo.png" alt="logo"></a></li>
+            <li class="li_logo"><a href="index.html"><img class="logo" src="image/logo.png" alt="logo"></a></li>
     
             <div class="menu_deroulant">
                 
@@ -26,6 +27,8 @@
                         </ul>
                     </nav>
             </div>
+			
+			
     
             <div class="flex-row items-center contact_panier">
                 <li class="contact_txt"><a class="hover" href="contact.html">CONTACT</a></li>
@@ -34,7 +37,16 @@
             </div>
         </section>
     </header>
-
+	
+	<h1>CONTACT US</h1>
+	<form class="flex-column items-center formulaire-contact">
+		<input type="text" name="nom_complet" placeholder="Fullname" required>
+		<input type="email" name="email" placeholder="Email" required>
+		<div><p>If it's about an order:</p><input type="text" name="numero-de-commande" placeholder="#ABC123E4G"></div>
+		<textarea name="message" placeholder="Your message..."></textarea>
+		<input id="btn-send" type="submit" value="Send" name="submit" />
+	</form>
+	
     <footer class="flex-row items-center justify-center">
         <div class="flex-column">
             <li><a href="#">home</a></li>

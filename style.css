@@ -370,6 +370,16 @@ footer>div:last-child{
 }
 
 
+
+
+
+
+
+
+
+
+
+
 /* media queries */
 @media (max-width: 1000px) {
 
@@ -503,6 +513,10 @@ footer>div:last-child{
     .div_btn_burger{
         display: block;
     }
+
+
+
+    
 
 
     /* autre */
