@@ -370,7 +370,10 @@ footer>div:last-child{
 }
 
 
-
+.page_active{
+    text-decoration: underline var(--yellow);
+    color: var(--yellow);
+}
 
 
 

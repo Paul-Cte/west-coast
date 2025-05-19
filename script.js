@@ -42,5 +42,5 @@ const closeMenu = () => {
     body.classList.remove('bodyactive');
 };
 
-document.getElementById("btn_fermeture").addEventListener('click',closeMenu)
+document.getElementById("btn_fermeture").addEventListener('click',closeMenu);
 
