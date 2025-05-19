@@ -476,26 +476,42 @@ footer>div:last-child{
     .menu_deroulant{
         z-index: 15;
         position:absolute;
-        background-color: var(--green);
+        /* background-color: var(--green); */
         top: 0px;
         left: 0px;
         transform: translateX(-100%);
         width: 100%;
         height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .menu_deroulant .nav_menu{
+        width: 70%;
         padding: 5vw;
         padding-top: 32.5px;
-        overflow: hidden;
+        background-color: var(--green);
+
+
+    }
+
+    .div_overlay{
+        width: 30%;
+        background-color: black;
+        opacity: 0.5;
     }
 
     .menu_deroulant a{
         color: var(--white);
-        font-size: 25px;
+        font-size: 18pxpx;
     }
 
     .menu_deroulant nav ul{
         position: absolute;
         top: 50vh;
-        left: 50vw;
+        left: 35vw;
         transform: translate(-50%,-50%);
         display: flex;
         flex-direction: column;
