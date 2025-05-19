@@ -1,0 +1,64 @@
+/* la presentation générale de l'accueil du site */
+
+.who-are-we{
+    width: 70vw;
+    margin: auto;
+    height: fit-content;
+}
+
+.who-are-we>div{
+    background-color: var(--vert_clair);
+    box-shadow: 0px 0px 8px var(--green);
+    margin-top: 10vh;
+    margin-bottom: 10vh; 
+    display: flex;
+    border-radius: 15px;
+    gap: 10vw;
+    height: fit-content;
+    align-items: center;
+    transition: ease-in-out 0.4s;
+}
+
+.who-are-we>div:hover {
+    transform: scale(1.02);
+}
+
+.reverse2{
+    flex-direction: row-reverse;
+}
+
+.reverse2:last-of-type>div{
+    min-height: 150px;
+}
+
+.who-are-we>div>div{
+    height: 100%;
+    width: 30vw;
+    min-height: 300px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.who-are-we>div>div>img{
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.who-are-we a{
+    color: black;
+}
+.who-are-we li{
+    background-color: var(--yellow);
+    width: fit-content;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.who-are-we li:hover{
+    transform: scale(1.03);
+    transition: all 0.2s ease-out;
+}
