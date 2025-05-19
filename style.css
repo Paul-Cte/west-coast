@@ -738,3 +738,60 @@ footer>div:last-child{
     }
 
 }
+
+/* Carrousel */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.carousel-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.carousel-item .name {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.carousel-item blockquote {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+}
+
+ .carousel-wrapper {
+    width: 700px; /* Largeur d'affichage pour 2 avis */
+    overflow: hidden;
+    margin: auto;
+}
+
+.carousel-content {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 350px; /* Largeur d'un avis */
+    text-align: center;
+}
+
+.carousel-btn {
+    background-color: #d7d56a;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.carousel-btn:hover {
+    background-color: #bcb90c;
+}
