@@ -375,6 +375,9 @@ footer>div:last-child{
     color: var(--yellow);
 }
 
+a.social {
+    padding: 0.5em;
+}
 
 
 
